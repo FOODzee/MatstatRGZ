@@ -106,7 +106,7 @@ npi <- np_vector(Xhist$breaks)
 nDhi <- sum((Xhist$counts - npi)^2/npi)
 
 # Вычисляем реально достигнутый уровень значимости
-RDUZhi <- 1 - pchisq(nDhi, length(Xhist$counts)-3)
+RDUZhi <- 1 - pchisq(nDhi, length(Xhist$counts)-1)
 
 
 
